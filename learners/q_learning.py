@@ -73,6 +73,7 @@ class QLearning:
         time.sleep(0.3)
 
         while True:
+            clear_output(wait=True)
             action = np.argmax(state_action_values[state])
             # take action and observe R, S'
             observation, reward, done, info = env.step(action)
